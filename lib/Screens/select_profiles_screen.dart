@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:netflix_clone/Utils/Colors/colors.dart';
+import 'package:netflix_clone/Widgets/SelectProfiles/SelectProfiles_appbar.dart';
 
 class SelectProfiles extends StatelessWidget {
   const SelectProfiles({Key? key}) : super(key: key);
@@ -7,19 +7,7 @@ class SelectProfiles extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Who\'s Watching?',
-            style: TextStyle(color: white, fontWeight: FontWeight.w300)),
-        actions: [
-          TextButton(
-            onPressed: () {},
-            child: const Text(
-              'Edit',
-              style: TextStyle(color: white, fontWeight: FontWeight.bold),
-            ),
-          ),
-        ],
-      ),
+      appBar: SelectProfilesAB(),
     );
   }
 }
