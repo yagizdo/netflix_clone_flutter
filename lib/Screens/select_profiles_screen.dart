@@ -8,7 +8,8 @@ class SelectProfiles extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Select Profile'),
+        title: Text('Who\'s Watching?',
+            style: TextStyle(color: white, fontWeight: FontWeight.w300)),
         actions: [
           TextButton(
             onPressed: () {},
