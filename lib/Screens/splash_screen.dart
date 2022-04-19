@@ -19,7 +19,7 @@ class _SplashScreenState extends State<SplashScreen>
   void initState() {
     super.initState();
     _controller = AnimationController(
-      duration: Duration(seconds: (1)),
+      duration: const Duration(seconds: (1)),
       vsync: this,
     );
   }
@@ -41,7 +41,7 @@ class _SplashScreenState extends State<SplashScreen>
                 context,
                 PageTransition(
                   type: PageTransitionType.fade,
-                  child: MainScreen(),
+                  child: const MainScreen(),
                 ),
               ),
             );
