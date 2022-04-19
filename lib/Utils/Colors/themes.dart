@@ -6,6 +6,8 @@ class NetflixTheme {
   final netflixTheme = ThemeData(
     // Scaffold Color
     scaffoldBackgroundColor: black,
+    // Appbar Color
+    appBarTheme: const AppBarTheme(color: black),
     // Bottom Navigation Bar Theme
     bottomNavigationBarTheme: const BottomNavigationBarThemeData(
       backgroundColor: black,

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import 'package:netflix_clone/Screens/main_screen.dart';
+import 'package:netflix_clone/Screens/select_profiles_screen.dart';
 import 'package:netflix_clone/Utils/Colors/colors.dart';
 import 'package:page_transition/page_transition.dart';
 
@@ -37,11 +37,11 @@ class _SplashScreenState extends State<SplashScreen>
           _controller
             ..duration = composition.duration
             ..forward().whenComplete(
-              () => Navigator.push(
+              () => Navigator.pushReplacement(
                 context,
                 PageTransition(
                   type: PageTransitionType.fade,
-                  child: const MainScreen(),
+                  child: const SelectProfiles(),
                 ),
               ),
             );
