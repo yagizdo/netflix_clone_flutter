@@ -20,25 +20,37 @@ class _MainScreenState extends State<MainScreen> {
       BottomNavigationBarItem(
           icon: SvgPicture.asset(
             'lib/Utils/Icons/home_icon.svg',
+            width: 25,
             color: selectedIndex == 0 ? white : grey,
           ),
           label: 'Home'),
       BottomNavigationBarItem(
-          icon: SvgPicture.asset('lib/Utils/Icons/popular_icon.svg',
-              color: selectedIndex == 1 ? white : grey),
+          icon: selectedIndex == 1
+              ? SvgPicture.asset(
+                  'lib/Utils/Icons/selected_popular_icon.svg',
+                  width: 25,
+                )
+              : SvgPicture.asset(
+                  'lib/Utils/Icons/unselected_popular_icon.svg',
+                  width: 25,
+                ),
           label: 'Popular'),
       BottomNavigationBarItem(
           icon: SvgPicture.asset('lib/Utils/Icons/search_icon.svg',
-              color: selectedIndex == 2 ? white : grey),
+              width: 25, color: selectedIndex == 2 ? white : grey),
           label: 'Search'),
       BottomNavigationBarItem(
           icon: SvgPicture.asset('lib/Utils/Icons/downloads_icon.svg',
-              color: selectedIndex == 3 ? white : grey),
+              width: 25, color: selectedIndex == 3 ? white : grey),
           label: 'Downloads'),
     ];
     return Scaffold(
       backgroundColor: black,
       bottomNavigationBar: BottomNavigationBar(
+        //Unselected fontsize
+        unselectedFontSize: 14,
+        //Selected fontsize
+        selectedFontSize: 14,
         // Navbar type
         type: BottomNavigationBarType.fixed,
         // Background color
