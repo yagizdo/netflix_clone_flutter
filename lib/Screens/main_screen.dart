@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:netflix_clone/Utils/Colors/colors.dart';
 
 class MainScreen extends StatefulWidget {
@@ -9,17 +10,32 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
-  // Navbar item list
-  var items = <BottomNavigationBarItem>[
-    BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-    BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-    BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-    BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-  ];
   // For selected tab
   int selectedIndex = 0;
+
   @override
   Widget build(BuildContext context) {
+    // Navbar item list
+    var items = <BottomNavigationBarItem>[
+      BottomNavigationBarItem(
+          icon: SvgPicture.asset(
+            'lib/Utils/Icons/home_icon.svg',
+            color: selectedIndex == 0 ? white : grey,
+          ),
+          label: 'Home'),
+      BottomNavigationBarItem(
+          icon: SvgPicture.asset('lib/Utils/Icons/popular_icon.svg',
+              color: selectedIndex == 1 ? white : grey),
+          label: 'Popular'),
+      BottomNavigationBarItem(
+          icon: SvgPicture.asset('lib/Utils/Icons/search_icon.svg',
+              color: selectedIndex == 2 ? white : grey),
+          label: 'Search'),
+      BottomNavigationBarItem(
+          icon: SvgPicture.asset('lib/Utils/Icons/downloads_icon.svg',
+              color: selectedIndex == 3 ? white : grey),
+          label: 'Downloads'),
+    ];
     return Scaffold(
       backgroundColor: black,
       bottomNavigationBar: BottomNavigationBar(
