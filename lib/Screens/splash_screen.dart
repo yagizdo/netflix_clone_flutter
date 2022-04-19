@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:netflix_clone/Screens/main_screen.dart';
+import 'package:netflix_clone/Utils/Colors/colors.dart';
 import 'package:page_transition/page_transition.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -26,6 +27,7 @@ class _SplashScreenState extends State<SplashScreen>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: black,
       body: Lottie.asset(
         'lib/Utils/Lottie/netflix_intro.json',
         controller: _controller,
