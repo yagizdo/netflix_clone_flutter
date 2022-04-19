@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:netflix_clone/Screens/downloads_screen.dart';
+import 'package:netflix_clone/Screens/home_screen.dart';
+import 'package:netflix_clone/Screens/popular_screen.dart';
+import 'package:netflix_clone/Screens/search_screen.dart';
 import 'package:netflix_clone/Utils/Colors/colors.dart';
 
 class MainScreen extends StatefulWidget {
@@ -12,7 +16,14 @@ class MainScreen extends StatefulWidget {
 
 class _MainScreenState extends State<MainScreen> {
   // For selected tab
-  int selectedIndex = 0;
+  int _selectedIndex = 0;
+  // Page List
+  static const List _pages = [
+    HomeScreen(),
+    PopularScreen(),
+    SearchScreen(),
+    DownloadsScreen()
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -22,11 +33,11 @@ class _MainScreenState extends State<MainScreen> {
           icon: SvgPicture.asset(
             'lib/Utils/Icons/home_icon.svg',
             width: 25.w,
-            color: selectedIndex == 0 ? white : grey,
+            color: _selectedIndex == 0 ? white : grey,
           ),
           label: 'Home'),
       BottomNavigationBarItem(
-          icon: selectedIndex == 1
+          icon: _selectedIndex == 1
               ? SvgPicture.asset(
                   'lib/Utils/Icons/selected_popular_icon.svg',
                   width: 25.w,
@@ -38,46 +49,42 @@ class _MainScreenState extends State<MainScreen> {
           label: 'Popular'),
       BottomNavigationBarItem(
           icon: SvgPicture.asset('lib/Utils/Icons/search_icon.svg',
-              width: 25.w, color: selectedIndex == 2 ? white : grey),
+              width: 25.w, color: _selectedIndex == 2 ? white : grey),
           label: 'Search'),
       BottomNavigationBarItem(
           icon: SvgPicture.asset('lib/Utils/Icons/downloads_icon.svg',
-              width: 25.w, color: selectedIndex == 3 ? white : grey),
+              width: 25.w, color: _selectedIndex == 3 ? white : grey),
           label: 'Downloads'),
     ];
     return Scaffold(
-      backgroundColor: black,
-      bottomNavigationBar: BottomNavigationBar(
-        //Unselected fontsize
-        unselectedFontSize: 12.sp,
-        //Selected fontsize
-        selectedFontSize: 12.sp,
-        // Navbar type
-        type: BottomNavigationBarType.fixed,
-        // Background color
         backgroundColor: black,
-        // Items list
-        items: items,
-        // Selected Color
-        selectedItemColor: white,
-        // Unselected Color
-        unselectedItemColor: grey,
-        onTap: onItemTapped,
-        currentIndex: selectedIndex,
-      ),
-      body: Center(
-        child: Text(
-          'Netflix Clone',
-          style: TextStyle(color: white),
+        bottomNavigationBar: BottomNavigationBar(
+          //Unselected fontsize
+          unselectedFontSize: 12.sp,
+          //Selected fontsize
+          selectedFontSize: 12.sp,
+          // Navbar type
+          type: BottomNavigationBarType.fixed,
+          // Background color
+          backgroundColor: black,
+          // Items list
+          items: items,
+          // Selected Color
+          selectedItemColor: white,
+          // Unselected Color
+          unselectedItemColor: grey,
+          onTap: onItemTapped,
+          currentIndex: _selectedIndex,
         ),
-      ),
-    );
+        body: SafeArea(
+          child: _pages.elementAt(_selectedIndex),
+        ));
   }
 
   // For show current selected tab
   void onItemTapped(int index) {
     setState(() {
-      selectedIndex = index;
+      _selectedIndex = index;
     });
   }
 }
