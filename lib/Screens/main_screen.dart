@@ -57,22 +57,16 @@ class _MainScreenState extends State<MainScreen> {
           label: 'Downloads'),
     ];
     return Scaffold(
-        backgroundColor: black,
         bottomNavigationBar: BottomNavigationBar(
           //Unselected fontsize
           unselectedFontSize: 12.sp,
           //Selected fontsize
           selectedFontSize: 12.sp,
-          // Navbar type
-          type: BottomNavigationBarType.fixed,
           // Background color
-          backgroundColor: black,
+          backgroundColor:
+              Theme.of(context).bottomNavigationBarTheme.backgroundColor,
           // Items list
           items: items,
-          // Selected Color
-          selectedItemColor: white,
-          // Unselected Color
-          unselectedItemColor: grey,
           onTap: onItemTapped,
           currentIndex: _selectedIndex,
         ),
