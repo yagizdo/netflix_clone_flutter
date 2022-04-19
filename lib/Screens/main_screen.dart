@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:netflix_clone/Utils/Colors/colors.dart';
 
@@ -20,7 +21,7 @@ class _MainScreenState extends State<MainScreen> {
       BottomNavigationBarItem(
           icon: SvgPicture.asset(
             'lib/Utils/Icons/home_icon.svg',
-            width: 25,
+            width: 25.w,
             color: selectedIndex == 0 ? white : grey,
           ),
           label: 'Home'),
@@ -28,29 +29,29 @@ class _MainScreenState extends State<MainScreen> {
           icon: selectedIndex == 1
               ? SvgPicture.asset(
                   'lib/Utils/Icons/selected_popular_icon.svg',
-                  width: 25,
+                  width: 25.w,
                 )
               : SvgPicture.asset(
                   'lib/Utils/Icons/unselected_popular_icon.svg',
-                  width: 25,
+                  width: 25.w,
                 ),
           label: 'Popular'),
       BottomNavigationBarItem(
           icon: SvgPicture.asset('lib/Utils/Icons/search_icon.svg',
-              width: 25, color: selectedIndex == 2 ? white : grey),
+              width: 25.w, color: selectedIndex == 2 ? white : grey),
           label: 'Search'),
       BottomNavigationBarItem(
           icon: SvgPicture.asset('lib/Utils/Icons/downloads_icon.svg',
-              width: 25, color: selectedIndex == 3 ? white : grey),
+              width: 25.w, color: selectedIndex == 3 ? white : grey),
           label: 'Downloads'),
     ];
     return Scaffold(
       backgroundColor: black,
       bottomNavigationBar: BottomNavigationBar(
         //Unselected fontsize
-        unselectedFontSize: 14,
+        unselectedFontSize: 12.sp,
         //Selected fontsize
-        selectedFontSize: 14,
+        selectedFontSize: 12.sp,
         // Navbar type
         type: BottomNavigationBarType.fixed,
         // Background color
