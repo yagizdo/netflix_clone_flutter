@@ -32,7 +32,7 @@ Run App
 
 ## What will be add :question:
 
-- [ ] Splash Screen
+- [x] Splash Screen
 - [ ] Select User Screen
 - [ ] Home Screen
 - [ ] News Screen
@@ -42,7 +42,9 @@ Run App
 
 
 ##  Libraries I use in the application:
-Soon..
+Splash Screen : 
+- Lottie: https://pub.dev/packages/lottie
+- Page Transition : https://pub.dev/packages/page_transition
 
 ## Screenshots
 Soon..
