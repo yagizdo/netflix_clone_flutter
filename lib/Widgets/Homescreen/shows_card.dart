@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
 class ShowsCard extends StatelessWidget {
-  const ShowsCard({Key? key}) : super(key: key);
+  ShowsCard({Key? key, required this.img_asset}) : super(key: key);
 
+  String img_asset;
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Image.asset(img_asset);
   }
 }
