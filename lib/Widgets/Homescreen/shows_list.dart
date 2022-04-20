@@ -12,8 +12,14 @@ class ShowsList extends StatelessWidget {
       'lib/Utils/Img/dont_look_up.png',
       'lib/Utils/Img/the_amazing_spiderman.png',
     ];
-    return ListView.builder(
-        itemBuilder: (context, index) =>
-            ShowsCard(img_asset: posterList[index]));
+    return SizedBox(
+      height: 220,
+      child: ListView.builder(
+          padding: EdgeInsets.symmetric(vertical: 12, horizontal: 16),
+          scrollDirection: Axis.horizontal,
+          itemCount: posterList.length,
+          itemBuilder: (context, index) =>
+              ShowsCard(img_asset: posterList[index])),
+    );
   }
 }
