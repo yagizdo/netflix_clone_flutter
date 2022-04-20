@@ -66,6 +66,7 @@ flutter:
     - lib/Utils/Lottie/
     - lib/Utils/Icons/
     - lib/Utils/Img/
+    - lib/Utils/Img/netflix_logo.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
