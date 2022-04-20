@@ -13,7 +13,8 @@ class ProfileBoxs extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            ProfileBox(img_asset: 'lib/Utils/Img/nick_img.png', name: 'Yilmaz'),
+            ProfileBox(
+                img_asset: 'lib/Utils/Img/andrew_img.png', name: 'Yilmaz'),
             SizedBox(
               width: 20.w,
             ),
