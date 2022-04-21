@@ -16,7 +16,7 @@ class HomeScreenThumbnail extends StatelessWidget {
           fit: BoxFit.fill,
         ),
         Container(
-          height: 500.h,
+          height: 501.h,
           decoration: const BoxDecoration(
             gradient: LinearGradient(
               colors: [black, Colors.transparent],
@@ -27,12 +27,14 @@ class HomeScreenThumbnail extends StatelessWidget {
         ),
         Positioned(
           top: 400.h,
-          left: 38.w,
+          left: 25.w,
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Padding(
                 padding: const EdgeInsets.only(left: 15),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
                       'Sitcoms ',
