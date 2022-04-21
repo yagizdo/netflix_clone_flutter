@@ -10,10 +10,11 @@ class ShowsList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var posterList = [
-      'lib/Utils/Img/spiderman_hc.png',
-      'lib/Utils/Img/spiderman_nwh.png',
-      'lib/Utils/Img/dont_look_up.png',
-      'lib/Utils/Img/the_amazing_spiderman.png',
+      'lib/Utils/Img/iron_man_2_post.png',
+      'lib/Utils/Img/spiderman_hc_post.jpeg',
+      'lib/Utils/Img/the_prestige_post.jpg',
+      'lib/Utils/Img/spiderman_nwh_post.webp',
+      'lib/Utils/Img/wanted_film_post.jpg',
     ];
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
