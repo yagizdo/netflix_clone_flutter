@@ -9,6 +9,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBodyBehindAppBar: true,
       body: SingleChildScrollView(
         child: Column(
           children: [HomescreenAB(), HomeScreenThumbnail(), ShowsList()],
