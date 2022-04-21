@@ -27,12 +27,14 @@ class HomeScreenThumbnail extends StatelessWidget {
         ),
         Positioned(
           top: 400.h,
-          left: 38.w,
+          left: 25.w,
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Padding(
                 padding: const EdgeInsets.only(left: 15),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
                       'Sitcoms ',

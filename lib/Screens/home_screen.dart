@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:netflix_clone/Widgets/Homescreen/homescreen_appbar.dart';
+import 'package:netflix_clone/Widgets/Homescreen/homescreen_thumbnail.dart';
 import 'package:netflix_clone/Widgets/Homescreen/shows_list.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -7,8 +9,10 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [ShowsList()],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [HomescreenAB(), HomeScreenThumbnail(), ShowsList()],
+        ),
       ),
     );
   }
