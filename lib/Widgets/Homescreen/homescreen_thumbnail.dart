@@ -16,7 +16,7 @@ class HomeScreenThumbnail extends StatelessWidget {
           fit: BoxFit.fill,
         ),
         Container(
-          height: 500.h,
+          height: 501.h,
           decoration: const BoxDecoration(
             gradient: LinearGradient(
               colors: [black, Colors.transparent],
