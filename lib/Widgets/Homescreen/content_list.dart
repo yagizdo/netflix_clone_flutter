@@ -35,7 +35,7 @@ class ContentList extends StatelessWidget {
                   scrollDirection: Axis.horizontal,
                   itemCount: posterList.length,
                   itemBuilder: (context, index) =>
-                      KwCard())
+                      KwCard(img_url: posterList[index],seasonNumber: 2, episodeNumber: 2,))
               : ListView.builder(
                   padding: EdgeInsets.symmetric(vertical: 12),
                   scrollDirection: Axis.horizontal,
