@@ -9,19 +9,18 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var filmPosterList = [
-      'lib/Utils/Img/iron_man_2_post.png',
-      'lib/Utils/Img/spiderman_hc_post.jpeg',
-      'lib/Utils/Img/the_prestige_post.jpg',
-      'lib/Utils/Img/spiderman_nwh_post.webp',
-      'lib/Utils/Img/wanted_film_post.jpg',
+      'lib/Utils/Img/films/iron_man_2_post.png',
+      'lib/Utils/Img/films/spiderman_hc_post.jpeg',
+      'lib/Utils/Img/films/the_prestige_post.jpg',
+      'lib/Utils/Img/films/spiderman_nwh_post.webp',
+      'lib/Utils/Img/films/wanted_film_post.jpg',
     ];
 
     var showsPosterList = [
-      'lib/Utils/Img/spongebob.jpeg',
-      'lib/Utils/Img/family_guy.jpg',
-      'lib/Utils/Img/pinky_malinky.jpg',
-      'lib/Utils/Img/bojack_horseman.webp',
-      'lib/Utils/Img/teen_titans.jpg',
+      'lib/Utils/Img/cartoons/spongebob.jpeg',
+      'lib/Utils/Img/cartoons/family_guy.jpg',
+      'lib/Utils/Img/cartoons/pinky_malinky.jpg',
+      'lib/Utils/Img/cartoons/bojack_horseman.webp',
     ];
     return Scaffold(
       extendBodyBehindAppBar: true,
