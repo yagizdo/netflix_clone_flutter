@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:netflix_clone/Widgets/Homescreen/shows_card.dart';
+import 'package:netflix_clone/Widgets/Homescreen/film_card.dart';
 
 import '../../Utils/Colors/colors.dart';
 
