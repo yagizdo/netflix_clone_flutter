@@ -30,7 +30,11 @@ class HomeScreen extends StatelessWidget {
           children: [
             HomescreenAB(),
             HomeScreenThumbnail(),
-            ContentList(title: 'Films', posterList: filmPosterList)
+            // Films
+            ContentList(title: 'Films', posterList: filmPosterList),
+
+            // Cartoons
+            ContentList(title: 'Cartoons', posterList: showsPosterList),
           ],
         ),
       ),
