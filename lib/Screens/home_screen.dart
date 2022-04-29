@@ -16,11 +16,20 @@ class HomeScreen extends StatelessWidget {
       'lib/Utils/Img/films/wanted_film_post.jpg',
     ];
 
-    var showsPosterList = [
+    var cartoonsPosterList = [
       'lib/Utils/Img/cartoons/spongebob.jpeg',
       'lib/Utils/Img/cartoons/family_guy.jpg',
       'lib/Utils/Img/cartoons/pinky_malinky.jpg',
       'lib/Utils/Img/cartoons/bojack_horseman.webp',
+      'lib/Utils/Img/cartoons/big_mouth.jpeg',
+    ];
+
+    var keepWatchingPosterList = [
+      'lib/Utils/Img/cartoons/spongebob.jpeg',
+      'lib/Utils/Img/shows/the_office.jpg',
+      'lib/Utils/Img/shows/b_nine_nine.jpg',
+      'lib/Utils/Img/cartoons/big_mouth.jpeg',
+      'lib/Utils/Img/cartoons/family_guy.jpg',
     ];
     return Scaffold(
       extendBodyBehindAppBar: true,
@@ -31,13 +40,13 @@ class HomeScreen extends StatelessWidget {
             HomeScreenThumbnail(),
 
             // Keep Watching
-            ContentList(title: 'Yilmaz Yagiz, Keep Watching', posterList: showsPosterList, isKeepWatching: true,),
+            ContentList(title: 'Yilmaz Yagiz, Keep Watching', posterList: keepWatchingPosterList, isKeepWatching: true,),
 
             // Films
             ContentList(title: 'Films', posterList: filmPosterList),
 
             // Cartoons
-            ContentList(title: 'Cartoons', posterList: showsPosterList),
+            ContentList(title: 'Cartoons', posterList: cartoonsPosterList),
           ],
         ),
       ),
