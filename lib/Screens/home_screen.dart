@@ -30,6 +30,10 @@ class HomeScreen extends StatelessWidget {
           children: [
             HomescreenAB(),
             HomeScreenThumbnail(),
+
+            // Keep Watching
+            ContentList(title: 'Yilmaz Yagiz, Keep Watching', posterList: showsPosterList, isKeepWatching: true,),
+
             // Films
             ContentList(title: 'Films', posterList: filmPosterList),
 
