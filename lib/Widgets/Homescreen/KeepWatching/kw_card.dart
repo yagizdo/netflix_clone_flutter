@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:netflix_clone/Utils/Colors/colors.dart';
 
 class KwCard extends StatelessWidget {
@@ -11,15 +12,21 @@ class KwCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Container(
-          height: 165,
-          width: 120,
-          margin: EdgeInsets.symmetric(horizontal: 8),
-          decoration: BoxDecoration(
-            image: DecorationImage(
-                image: AssetImage(img_url),
-                fit: BoxFit.fill),
-          ),
+        Stack(
+          alignment: Alignment.center,
+          children: [
+            Container(
+              height: 165,
+              width: 120,
+              margin: EdgeInsets.symmetric(horizontal: 8),
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage(img_url),
+                    fit: BoxFit.fill),
+              ),
+            ),
+            Positioned(child: SvgPicture.asset('lib/Utils/Icons/keep_icon.svg'))
+          ],
         ),
         Container(
           color: blackGrey,
