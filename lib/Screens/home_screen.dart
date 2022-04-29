@@ -15,6 +15,14 @@ class HomeScreen extends StatelessWidget {
       'lib/Utils/Img/spiderman_nwh_post.webp',
       'lib/Utils/Img/wanted_film_post.jpg',
     ];
+
+    var showsPosterList = [
+      'lib/Utils/Img/spongebob.jpeg',
+      'lib/Utils/Img/family_guy.jpg',
+      'lib/Utils/Img/pinky_malinky.jpg',
+      'lib/Utils/Img/bojack_horseman.webp',
+      'lib/Utils/Img/teen_titans.jpg',
+    ];
     return Scaffold(
       extendBodyBehindAppBar: true,
       body: SingleChildScrollView(
