@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:netflix_clone/Widgets/Homescreen/homescreen_appbar.dart';
 import 'package:netflix_clone/Widgets/Homescreen/homescreen_thumbnail.dart';
-import 'package:netflix_clone/Widgets/Homescreen/films_list.dart';
+import 'package:netflix_clone/Widgets/Homescreen/content_list.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
