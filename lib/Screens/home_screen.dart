@@ -12,7 +12,7 @@ class HomeScreen extends StatelessWidget {
       extendBodyBehindAppBar: true,
       body: SingleChildScrollView(
         child: Column(
-          children: [HomescreenAB(), HomeScreenThumbnail(), ShowsList()],
+          children: [HomescreenAB(), HomeScreenThumbnail(), Content()],
         ),
       ),
     );

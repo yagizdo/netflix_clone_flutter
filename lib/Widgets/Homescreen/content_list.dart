@@ -4,8 +4,8 @@ import 'package:netflix_clone/Widgets/Homescreen/film_card.dart';
 
 import '../../Utils/Colors/colors.dart';
 
-class ShowsList extends StatelessWidget {
-  ShowsList({Key? key,required this.title,required this.posterList}) : super(key: key);
+class ContentList extends StatelessWidget {
+  ContentList({Key? key,required this.title,required this.posterList}) : super(key: key);
   String title;
   var posterList;
 
