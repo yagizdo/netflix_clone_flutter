@@ -16,7 +16,7 @@ class KwCard extends StatelessWidget {
           alignment: Alignment.center,
           children: [
             Container(
-              height: 165,
+              height: 156,
               width: 120,
               margin: EdgeInsets.symmetric(horizontal: 8),
               decoration: BoxDecoration(
@@ -30,7 +30,7 @@ class KwCard extends StatelessWidget {
         ),
         Container(
           color: blackGrey,
-          height: 30,
+          height: 40,
           width: MediaQuery.of(context).size.width / 3.4,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
