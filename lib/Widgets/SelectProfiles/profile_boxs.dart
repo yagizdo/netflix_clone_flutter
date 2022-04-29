@@ -14,11 +14,11 @@ class ProfileBoxs extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ProfileBox(
-                img_asset: 'lib/Utils/Img/andrew_img.png', name: 'Yilmaz'),
+                img_asset: 'lib/Utils/Img/profile/andrew_img.png', name: 'Yilmaz'),
             SizedBox(
               width: 20.w,
             ),
-            ProfileBox(img_asset: 'lib/Utils/Img/melvin_img.png', name: 'Oguz'),
+            ProfileBox(img_asset: 'lib/Utils/Img/profile/melvin_img.png', name: 'Oguz'),
           ],
         ),
         SizedBox(
@@ -27,17 +27,17 @@ class ProfileBoxs extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            ProfileBox(img_asset: 'lib/Utils/Img/hero_img.png', name: 'Selim'),
+            ProfileBox(img_asset: 'lib/Utils/Img/profile/hero_img.png', name: 'Selim'),
             SizedBox(
               width: 20.w,
             ),
-            ProfileBox(img_asset: 'lib/Utils/Img/diane_img.png', name: 'Ecem'),
+            ProfileBox(img_asset: 'lib/Utils/Img/profile/diane_img.png', name: 'Ecem'),
           ],
         ),
         SizedBox(
           height: 40.h,
         ),
-        ProfileBox(img_asset: 'lib/Utils/Img/connie_img.png', name: 'Pinar'),
+        ProfileBox(img_asset: 'lib/Utils/Img/profile/connie_img.png', name: 'Pinar'),
       ],
     );
   }

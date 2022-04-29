@@ -66,6 +66,10 @@ flutter:
     - lib/Utils/Lottie/
     - lib/Utils/Icons/
     - lib/Utils/Img/
+    - lib/Utils/Img/cartoons/
+    - lib/Utils/Img/films/
+    - lib/Utils/Img/profile/
+    - lib/Utils/Img/shows/
     - lib/Utils/Img/netflix_logo.png
   #   - images/a_dot_ham.jpeg
 

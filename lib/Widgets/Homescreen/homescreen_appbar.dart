@@ -20,7 +20,7 @@ class HomescreenAB extends StatelessWidget implements PreferredSizeWidget {
           width: 10.w,
         ),
         Image.asset(
-          'lib/Utils/Img/andrew_img.png',
+          'lib/Utils/Img/profile/andrew_img.png',
           width: 22.sp,
           height: 22.sp,
         ),
